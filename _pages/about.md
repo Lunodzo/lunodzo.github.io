@@ -1,11 +1,14 @@
----
-permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
----
+Who am I?
+======
+Hey there! I’m Lunodzo, a passionate researcher, educator, and tech enthusiast focusing on data management, information security and machine learning. With my PhD candidacy at Instituto Superior Técnico (IST), University of Lisbon, I’m all about harnessing data to make energy systems smarter, more efficient, and sustainable. My work combines innovative tech with real-world impact, and I’m thrilled to be part of this journey! Currently, I’m an Early-Stage Researcher with the Innovative Cyber-Physical Energy Systems (InnoCyPES) project, where I’m developing a large-scale data management platform for energy systems. My research doesn’t stop there—I’ve explored everything from Wi-Fi hotspot spoofing detection (check out my IEEE Access paper on FakeAP detector!) to decentralized relational data models for medium-voltage cable reliability, presented at IEEE PES ISGT Europe 2024. I love tackling complex problems, whether it’s securing P2P systems or modeling power grids with graph databases, and I’m always pushing for solutions that align with standards like CIM/IEC.
+
+Teaching is where I get to spark curiosity and share my love for tech. At Mzumbbe University, I’ve taught courses like Principles of Computer Programming, Distributed Systems, and Cryptography to both BSc and non-degree students, shaping the next generation of tech minds. I’ve also mentored standout bachelor’s projects, guiding students to create innovative systems like smart bins for waste monitoring and RFID-based employee performance tools. Beyond the classroom, I’ve led dynamic training sessions, from transformative learning workshops for academic staff to digital entrepreneurship boot camps with The LaunchPad Tanzania. My recent lecture on large-scale data management at the InnoCyPES Summer School in Italy was a highlight—nothing beats seeing those “aha!” moments! 
+
+Supervisory roles? I’ve got those covered too. As a mentor, I’ve guided students through projects that blend creativity and tech, like developing antenatal tracking systems and malicious bot click detectors. I’m also a founding chairperson of the IEEE Tanzania Young Professionals Affinity Group, where I connect young techies with global opportunities, and I serve as the Industry Relations Officer for IEEE Tanzania Subsection, bridging academia, industry, and government. 
+
+When I’m not geeking out over AI, IoT, or blockchain, you’ll find me behind a camera lens, capturing life’s moments, or mentoring young entrepreneurs at my “mentorship cafe.” I’m also a proud peer reviewer for IEEE Access, Elsevier, and IEEE AFRICON, ensuring the research community stays vibrant and rigorous. From building ICT infrastructure at Mzumbbe University to contributing to projects like AI4STEM and IoT-4-Youths, I’m all about creating tech that empowers communities. My work is driven by a belief that innovation should be inclusive, sustainable, and, honestly, a bit fun! 
+
+Want to collaborate, chat tech, or just swap ideas? Check out my contact details. And, ooh, before I forget, I am available for research contracts from December 2025, onwards.
 
 This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
 
