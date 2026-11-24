@@ -5,37 +5,47 @@ permalink: /publications/
 author_profile: true
 ---
 
-<p>My writing is organised by type and year. For article-level details and updated indexing, you can also visit <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>. For questions about any specific publication, feel free to get in touch.</p>
+{% assign pubs = site.data.publications.publications %}
+{% assign types = site.data.publications.types %}
 
-{% comment %}
-  Entries live in _data/publications.yml. Links are built automatically
-  from each entry's doi / arxiv / url / pdf fields.
-{% endcomment %}
+<p class="page-lead">Research on data management for energy systems, decentralised storage, graph data models and cybersecurity, plus project reports and occasional essays. For citation metrics, see my <a href="{{ site.author.googlescholar }}">Google Scholar</a> and <a href="{{ site.author.orcid }}">ORCID</a> profiles.</p>
 
-<p>
-{% for section in site.data.publications.sections %}
-  <a href="#{{ section.id }}">{{ section.title }}</a>{% unless forloop.last %} &middot; {% endunless %}
-{% endfor %}
-</p>
-
-{% for section in site.data.publications.sections %}
-<h2 id="{{ section.id }}">{{ section.title }}</h2>
-
-{% if section.entries.size == 0 %}
-<p><em>{{ section.empty_text | default: "Coming soon." }}</em></p>
-{% else %}
-{% assign by_year = section.entries | group_by: "year" | sort: "name" | reverse %}
-{% for group in by_year %}
-<h3>{{ group.name }}</h3>
-<ul>
-  {% for pub in group.items %}
-  <li>
-    {% if pub.authors %}{{ pub.authors }} {% endif %}<em>{{ pub.title }}</em>.{% if pub.venue %} {{ pub.venue }}.{% endif %}
-    {% capture links %}{% if pub.doi %} | <a href="https://doi.org/{{ pub.doi }}">DOI</a>{% endif %}{% if pub.arxiv %} | <a href="https://arxiv.org/abs/{{ pub.arxiv }}">arXiv</a>{% endif %}{% if pub.url %} | <a href="{{ pub.url }}">Article</a>{% endif %}{% if pub.pdf %} | <a href="{% if pub.pdf contains '://' %}{{ pub.pdf }}{% else %}{{ pub.pdf | relative_url }}{% endif %}">PDF</a>{% endif %}{% endcapture %}
-    {% if links != "" %}[{{ links | remove_first: " | " }}]{% endif %}
-  </li>
+<div class="filter-bar" role="toolbar" aria-label="Filter publications by type">
+  <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">All <span class="filter-count">{{ pubs.size }}</span></button>
+  {% for t in types %}
+    {% assign key = t[0] %}
+    {% assign n = pubs | where: "type", key | size %}
+    {% if n > 0 %}
+    <button type="button" class="filter-btn" data-filter="{{ key }}" aria-pressed="false">{{ t[1].filter }} <span class="filter-count">{{ n }}</span></button>
+    {% endif %}
   {% endfor %}
-</ul>
-{% endfor %}
-{% endif %}
-{% endfor %}
+</div>
+
+{% comment %} Flat list: newest year first; within a year, journals → conferences → … → writing. {% endcomment %}
+{% assign years = pubs | map: "year" | uniq | sort | reverse %}
+<ol class="pub-list" id="pub-list">
+  {% for y in years %}
+    {% assign in_year = pubs | where: "year", y %}
+    {% for t in types %}
+      {% assign group = in_year | where: "type", t[0] %}
+      {% for pub in group %}
+        {% include pub-item.html pub=pub %}
+      {% endfor %}
+    {% endfor %}
+  {% endfor %}
+</ol>
+
+<script>
+(function () {
+  var btns = document.querySelectorAll('.filter-btn');
+  var items = document.querySelectorAll('#pub-list .pub');
+  btns.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var f = b.getAttribute('data-filter');
+      btns.forEach(function (x) { x.classList.toggle('is-active', x === b); x.setAttribute('aria-pressed', x === b); });
+      items.forEach(function (it) { it.hidden = !(f === 'all' || it.getAttribute('data-type') === f); });
+    });
+  });
+})();
+</script>
+{% include cite-script.html %}

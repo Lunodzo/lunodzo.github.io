@@ -1,0 +1,27 @@
+{% comment %}
+  Renders one publication from _data/publications.yml.
+  Usage: {% include pub-item.html pub=pub %}
+{% endcomment %}
+{% assign pub = include.pub %}
+{% assign ptype = site.data.publications.types[pub.type] %}
+{% assign me = "Mwinuka, L. J." %}
+{% capture me_bold %}<strong>{{ me }}</strong>{% endcapture %}
+{% capture cite %}{{ pub.authors }} ({{ pub.year }}). {{ pub.title }}.{% if pub.venue %} {{ pub.venue }}.{% endif %}{% if pub.doi %} https://doi.org/{{ pub.doi }}{% endif %}{% endcapture %}
+<li class="pub" data-type="{{ pub.type }}">
+  <div class="pub__meta">
+    <span class="pub__badge pub__badge--{{ pub.type }}">{{ ptype.label }}</span>
+    <span class="pub__year">{{ pub.year }}</span>
+  </div>
+  <div class="pub__body">
+    <p class="pub__title">{% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}">{{ pub.title }}</a>{% elsif pub.url %}<a href="{{ pub.url }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</p>
+    <p class="pub__authors">{{ pub.authors | replace: me, me_bold }}</p>
+    {% if pub.venue %}<p class="pub__venue">{{ pub.venue }}</p>{% endif %}
+    <p class="pub__links">
+      {% if pub.doi %}<a class="chip-btn" href="https://doi.org/{{ pub.doi }}"><i class="fas fa-link" aria-hidden="true"></i> DOI: {{ pub.doi }}</a>{% endif %}
+      {% if pub.arxiv %}<a class="chip-btn" href="https://arxiv.org/abs/{{ pub.arxiv }}"><i class="ai ai-arxiv" aria-hidden="true"></i> arXiv</a>{% endif %}
+      {% if pub.url %}<a class="chip-btn" href="{{ pub.url }}"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Read</a>{% endif %}
+      {% if pub.pdf %}<a class="chip-btn" href="{% if pub.pdf contains '://' %}{{ pub.pdf }}{% else %}{{ pub.pdf | relative_url }}{% endif %}"><i class="fas fa-file-pdf" aria-hidden="true"></i> PDF</a>{% endif %}
+      {% if pub.type != "writing" %}<button type="button" class="chip-btn chip-btn--ghost js-cite" data-cite="{{ cite | strip | escape }}"><i class="fas fa-copy" aria-hidden="true"></i> <span>Copy citation</span></button>{% endif %}
+    </p>
+  </div>
+</li>
