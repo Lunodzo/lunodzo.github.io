@@ -1,52 +1,45 @@
-Who am I?
-======
-Hey there! I’m Lunodzo, a passionate researcher, educator, and tech enthusiast focusing on data management, information security and machine learning. With my PhD candidacy at Instituto Superior Técnico (IST), University of Lisbon, I’m all about harnessing data to make energy systems smarter, more efficient, and sustainable. My work combines innovative tech with real-world impact, and I’m thrilled to be part of this journey! Currently, I’m an Early-Stage Researcher with the Innovative Cyber-Physical Energy Systems (InnoCyPES) project, where I’m developing a large-scale data management platform for energy systems. My research doesn’t stop there—I’ve explored everything from Wi-Fi hotspot spoofing detection (check out my IEEE Access paper on FakeAP detector!) to decentralized relational data models for medium-voltage cable reliability, presented at IEEE PES ISGT Europe 2024. I love tackling complex problems, whether it’s securing P2P systems or modeling power grids with graph databases, and I’m always pushing for solutions that align with standards like CIM/IEC.
+---
+permalink: /
+title: "Who am I?"
+author_profile: true
+redirect_from:
+  - /about/
+  - /about.html
+---
 
-Teaching is where I get to spark curiosity and share my love for tech. At Mzumbbe University, I’ve taught courses like Principles of Computer Programming, Distributed Systems, and Cryptography to both BSc and non-degree students, shaping the next generation of tech minds. I’ve also mentored standout bachelor’s projects, guiding students to create innovative systems like smart bins for waste monitoring and RFID-based employee performance tools. Beyond the classroom, I’ve led dynamic training sessions, from transformative learning workshops for academic staff to digital entrepreneurship boot camps with The LaunchPad Tanzania. My recent lecture on large-scale data management at the InnoCyPES Summer School in Italy was a highlight—nothing beats seeing those “aha!” moments! 
+Hi, I am Lunodzo, a researcher in data engineering and database systems, currently working at DTU Wind and Energy Systems and pursuing a PhD in Electrical and Computer Engineering at Instituto Superior Tecnico, University of Lisbon. My work centres on data modelling and database systems on modern data platforms, with particular attention to compliance, future-proof design, and the question that keeps shaping my research agenda: what if we decentralise?
 
-Supervisory roles? I’ve got those covered too. As a mentor, I’ve guided students through projects that blend creativity and tech, like developing antenatal tracking systems and malicious bot click detectors. I’m also a founding chairperson of the IEEE Tanzania Young Professionals Affinity Group, where I connect young techies with global opportunities, and I serve as the Industry Relations Officer for IEEE Tanzania Subsection, bridging academia, industry, and government. 
+That perspective drives my broader interest in decentralised data management, distributed systems, and the digitalisation of energy systems. Alongside data engineering, I also work on information security, drawing on prior research in wireless network protection and mobile-device security. Across research, teaching, and consulting, I am interested in work that connects rigorous technical design to real socioeconomic needs.
 
-When I’m not geeking out over AI, IoT, or blockchain, you’ll find me behind a camera lens, capturing life’s moments, or mentoring young entrepreneurs at my “mentorship cafe.” I’m also a proud peer reviewer for IEEE Access, Elsevier, and IEEE AFRICON, ensuring the research community stays vibrant and rigorous. From building ICT infrastructure at Mzumbbe University to contributing to projects like AI4STEM and IoT-4-Youths, I’m all about creating tech that empowers communities. My work is driven by a belief that innovation should be inclusive, sustainable, and, honestly, a bit fun! 
+## Current Focus
 
-Want to collaborate, chat tech, or just swap ideas? Check out my contact details. And, ooh, before I forget, I am available for research contracts from December 2025, onwards.
+- Research Assistant at DTU Wind and Energy Systems
+- PhD candidate at IST, University of Lisbon
+- Academician at Mzumbe University, currently on study leave 
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+## Research Areas
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+- Data modelling and database systems
+- Decentralised and distributed data management
+- Data engineering for energy systems
+- Cybersecurity, including AI-driven and human-centred security approaches
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+## Education
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+- PhD in Electrical and Computer Engineering, IST, University of Lisbon. 
+- MSc in Wireless and Mobile Computing, Nelson Mandela African Institution of Science and Technology. 
+- BSc in Information Technology and Systems, Mzumbe University. 
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+## Selected Highlights
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+- Published research across energy data management, decentralised storage systems, graph data models, and cybersecurity.
+- Taught undergraduate and non-degree courses in programming, databases, distributed systems, cryptography, and operating systems.
+- Served in IEEE leadership and mentoring roles, including Chairperson of the Tanzania IEEE Young Professionals Affinity Group.
+- Worked across academia, research projects, training programmes, and applied consulting assignments.
 
-**Markdown generator**
+## Contact
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
-
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
-
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
-
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+- Email: [ljumw@dtu.dk](mailto:ljumw@dtu.dk), [lumwinuka@mzumbe.ac.tz](mailto:lumwinuka@mzumbe.ac.tz), [lunomwinuka@gmail.com](mailto:lunomwinuka@gmail.com)
+- LinkedIn: [Lunodzo Mwinuka](https://www.linkedin.com/in/lunodzo-mwinuka-606ba770/)
+- ORCID: [0000-0002-9737-8514](https://orcid.org/0000-0002-9737-8514)
+- Google Scholar: [Profile](https://scholar.google.com/citations?user=d5_GfVUAAAAJ&hl=en&oi=ao)
