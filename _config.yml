@@ -9,13 +9,13 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Lunodzo Personal Page"
+title                    : "Lunodzo Mwinuka"
 title_separator          : "-"
-name                     : &name "Lunodzo Mwinuka"
-description              : &description "A researcher in computer sciences"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+name                     : &name "Lunodzo Justine Mwinuka"
+description              : &description "Researcher in data engineering, database systems, and decentralised data management for energy systems."
+url                      : https://lunodzo.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "Lunodzo/lunodzo.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -23,13 +23,13 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Lunodzo"
+  name             : "Lunodzo Mwinuka"
   pronouns         : # example: "she/her"  
-  bio              : "A researcher in computer sciences focusing on data management and cybersecurity"
-  location         : "Lisbon, Portugal"
-  employer         : "University of Lisbon"
+  bio              : "Researcher in data engineering."
+  location         : "Lyngby, Denmark"
+  employer         : "DTU"
   uri              : # URL
-  email            : "lunomwinuka@gmail.com" 
+  email            : "ljumw@dtu.dk" 
 
   # Academic websites
   academia         : # URL
@@ -39,8 +39,8 @@ author:
   orcid            : "https://orcid.org/0000-0002-9737-8514"
   semantic         : # URL
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : "https://www.researchgate.net/profile/Lunodzo-Mwinuka"
-  scopus           : "https://www.scopus.com/authid/detail.uri?authorId=57349197400"
+  researchgate     : #"https://www.researchgate.net/profile/Lunodzo-Mwinuka"
+  scopus           : #"https://www.scopus.com/authid/detail.uri?authorId=57349197400"
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
@@ -51,16 +51,16 @@ author:
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
-  facebook         : "lunodzom"
+  bluesky          : #"bsky.app" # Replace this with you Bluesky username
+  facebook         : #"lunodzom"
   flickr           : # Username
   foursquare       : # Username
   goodreads        : # Username
   google_plus      : # Username
   keybase          : # Username
-  instagram        : "lunodzo"
+  instagram        : #"lunodzo"
   lastfm           : # Username
-  linkedin         : "https://www.linkedin.com/in/lunodzo-mwinuka-606ba770/"
+  linkedin         : "lunodzo-mwinuka-606ba770"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -68,7 +68,7 @@ author:
   steam            : # Username
   telegram         : # URL
   tumblr           : # Username
-  twitter          : "lunodzo"
+  twitter          : #"lunodzo"
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username
