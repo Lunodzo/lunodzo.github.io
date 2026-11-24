@@ -3,62 +3,21 @@ layout: archive
 title: "Projects"
 permalink: /projects/
 author_profile: true
+redirect_from:
+  - /portfolio/
 ---
 
-<p>This page highlights selected research and capacity-building projects drawn from my existing portfolio site and CV.</p>
+{% assign current = site.data.projects | where: "status", "current" %}
+{% assign past = site.data.projects | where: "status", "past" %}
 
-<h2>Selected Research Projects</h2>
+<p class="page-lead">Research and capacity-building projects I have worked on, from energy-sector AI and data platforms in Europe to digital-skills and education programmes in Tanzania.</p>
 
-<h3>AI-EFFECT</h3>
-<p><strong>Role:</strong> Research Assistant<br />
-<strong>Duration:</strong> July 2026 to January 2027<br />
-<strong>Host:</strong> Technical University of Denmark</p>
-<p>Contributing to AI solution workflows, data pipelines, and the deployment of open-source platforms under SYSLAB at DTU.</p>
+<h2 class="section-title"><i class="fas fa-circle-play" aria-hidden="true"></i> Current projects</h2>
+<div class="project-grid project-grid--featured">
+  {% for p in current %}{% include project-card.html p=p featured=true %}{% endfor %}
+</div>
 
-<h3>3PhaseInsight</h3>
-<p><strong>Role:</strong> Research Assistant<br />
-<strong>Duration:</strong> January 2026 to June 2026<br />
-<strong>Host:</strong> Technical University of Denmark<br />
-<strong>Link:</strong> <a href="https://wind.dtu.dk/3PhaseInsight">Project page</a></p>
-<p>Worked on data applications for smart-meter data, data pipelines, and platform orchestration with Apache Airflow.</p>
-
-<h3>InnoCyPES</h3>
-<p><strong>Role:</strong> PhD Researcher / Early-Stage Researcher<br />
-<strong>Duration:</strong> 2023 to 2026<br />
-<strong>Host:</strong> University of Salento, coordinated by DTU<br />
-<strong>Link:</strong> <a href="https://innocypes.eu/">Project page</a></p>
-<p>Designed and implemented large-scale data management and integration approaches for cyber-physical energy systems, including work on peer-to-peer storage and integration methods.</p>
-
-<h3>AI4STEM</h3>
-<p><strong>Role:</strong> Researcher and developer<br />
-<strong>Duration:</strong> 2024 to 2029<br />
-<strong>Host:</strong> Mzumbe University in partnership with Ghent University</p>
-<p>Supporting AI-based solutions and training materials for inclusive STEM learning in Tanzania.</p>
-
-<h3>IoT-4-Youths</h3>
-<p><strong>Role:</strong> Project member<br />
-<strong>Duration:</strong> 2023 to 2025<br />
-<strong>Host:</strong> Mzumbe University in partnership with Ghent University</p>
-<p>Contributed to research and capacity building for youth-focused IoT training and mentorship.</p>
-
-<h3>Data2Info</h3>
-<p><strong>Role:</strong> Project member and researcher<br />
-<strong>Duration:</strong> 2023 to 2025<br />
-<strong>Host:</strong> Mzumbe University in partnership with Ghent University<br />
-<strong>Link:</strong> <a href="https://hes4sd.be/project/improving-the-data-analysis-capacity-of-experts-and-information-systems-in-tanzanian-ministries-for-better-resources-management-and-sustainable-economic-growth-data2info/">Project page</a></p>
-<p>Participated in capacity building and research around data analysis capability for public-sector information systems.</p>
-
-<h3>4SITe Programme</h3>
-<p><strong>Role:</strong> Project member and Multimedia Lab Coordinator<br />
-<strong>Duration:</strong> 2021 to 2023<br />
-<strong>Link:</strong> <a href="https://www.vliruos.be/iuc-mzumbe-university-tanzania">Project page</a></p>
-<p>Supported digital infrastructure, multimedia content creation, and institutional sustainability planning.</p>
-
-<h3>ACTEA</h3>
-<p><strong>Role:</strong> Administrative Assistant<br />
-<strong>Duration:</strong> 2020 to 2021<br />
-<strong>Link:</strong> <a href="https://www.actea.net/">Project page</a></p>
-<p>Worked on data administration, partnerships, and curriculum-related activities under Applied Curricula in Technology for East Africa.</p>
-
-<p><strong>[FLAG]</strong> Add screenshots, software repositories, datasets, publications per project, and media assets for richer project pages.</p>
-
+<h2 class="section-title"><i class="fas fa-clock-rotate-left" aria-hidden="true"></i> Past projects</h2>
+<div class="project-grid">
+  {% for p in past %}{% include project-card.html p=p %}{% endfor %}
+</div>

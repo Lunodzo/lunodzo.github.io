@@ -1,0 +1,122 @@
+---
+permalink: /
+title: "Lunodzo Mwinuka"
+excerpt: "Researcher in data engineering and database systems for energy systems."
+author_profile: true
+redirect_from:
+  - /about/
+  - /about.html
+---
+
+<section class="hero">
+  <p class="hero__eyebrow">Researcher · Data engineering · Database systems</p>
+  <h2 class="hero__title">Designing data systems for the energy transition, and asking <em>“what if we decentralise?”</em></h2>
+  <p class="hero__lead">I am a researcher at <strong>DTU Wind and Energy Systems</strong> and a PhD candidate in Electrical and Computer Engineering at <strong>Instituto Superior Técnico, University of Lisbon</strong>, where I was a Marie Skłodowska-Curie fellow with InnoCyPES. I work on data modelling and database systems for modern data platforms, with a focus on compliance and future-proof design, and on decentralised data management for cyber-physical energy systems.</p>
+  <div class="hero__actions">
+    <a class="btn btn--primary" href="{{ '/publications/' | relative_url }}"><i class="fas fa-file-lines" aria-hidden="true"></i> Publications</a>
+    <a class="btn btn--secondary" href="{{ '/projects/' | relative_url }}"><i class="fas fa-diagram-project" aria-hidden="true"></i> Projects</a>
+    <a class="btn btn--secondary" href="mailto:{{ site.author.email }}"><i class="fas fa-envelope" aria-hidden="true"></i> Get in touch</a>
+  </div>
+</section>
+
+<section class="home-section">
+  <h2 class="section-title"><i class="fas fa-location-dot" aria-hidden="true"></i> Now</h2>
+  <div class="now-grid">
+    <div class="now-card">
+      <span class="now-card__label">Research</span>
+      <h3>Research Assistant, DTU Wind and Energy Systems</h3>
+      <p>Building AI solution workflows, data pipelines and open-source platforms for SYSLAB in the <a href="{{ '/projects/#ai-effect' | relative_url }}">AI-EFFECT</a> project.</p>
+    </div>
+    <div class="now-card">
+      <span class="now-card__label">PhD</span>
+      <h3>Large-scale data management and integration in energy systems</h3>
+      <p>Instituto Superior Técnico, University of Lisbon. Supervised by Prof. Hugo Morais, Prof. Massimo Cafaro and Prof. Lucas Pereira.</p>
+    </div>
+    <div class="now-card">
+      <span class="now-card__label">Academia</span>
+      <h3>Assistant Lecturer, Mzumbe University</h3>
+      <p>Tanzania, currently on study leave. I am also a researcher and developer in the AI4STEM project.</p>
+    </div>
+  </div>
+</section>
+
+<section class="home-section">
+  <h2 class="section-title"><i class="fas fa-flask" aria-hidden="true"></i> Research interests</h2>
+  <div class="area-grid">
+    <div class="area-card"><i class="fas fa-database" aria-hidden="true"></i><h3>Data modelling &amp; database systems</h3><p>Relational and graph data models, CIM-based models for grid reliability, and compliant, future-proof data platforms.</p></div>
+    <div class="area-card"><i class="fas fa-network-wired" aria-hidden="true"></i><h3>Decentralised data management</h3><p>Peer-to-peer storage and integration services, and distributed systems for data shared across organisations.</p></div>
+    <div class="area-card"><i class="fas fa-bolt" aria-hidden="true"></i><h3>Energy data engineering</h3><p>Big data in energy systems, smart-meter data pipelines, and data platforms for distribution grids.</p></div>
+    <div class="area-card"><i class="fas fa-shield-halved" aria-hidden="true"></i><h3>Cybersecurity</h3><p>Detection of attacks on wireless networks and mobile devices, AI-driven security, and the psychology of security.</p></div>
+  </div>
+</section>
+
+<section class="home-section">
+  <div class="section-head">
+    <h2 class="section-title"><i class="fas fa-star" aria-hidden="true"></i> Selected publications</h2>
+    <a class="text-link" href="{{ '/publications/' | relative_url }}">All publications <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+  </div>
+  {% assign selected = site.data.publications.publications | where: "selected", true %}
+  <ol class="pub-list pub-list--compact">
+    {% for pub in selected %}{% include pub-item.html pub=pub %}{% endfor %}
+  </ol>
+</section>
+
+<section class="home-section two-col">
+  <div>
+    <h2 class="section-title"><i class="fas fa-briefcase" aria-hidden="true"></i> Experience</h2>
+    <ul class="timeline">
+      <li><span class="timeline__date">2026 – now</span><div><strong>Research Assistant</strong> <span class="muted">DTU Wind and Energy Systems, Denmark</span></div></li>
+      <li><span class="timeline__date">2023 – 2025</span><div><strong>Marie Skłodowska-Curie Early-Stage Researcher</strong> <span class="muted">HPC Lab, University of Salento, Italy</span></div></li>
+      <li><span class="timeline__date">2025</span><div><strong>Research stays</strong> <span class="muted">Green Power Denmark · TU Delft · INESC-ID, IST Lisbon</span></div></li>
+      <li><span class="timeline__date">2018 – now</span><div><strong>Tutorial Assistant → Assistant Lecturer</strong> <span class="muted">Mzumbe University, Tanzania. Also served as programme coordinator and Multimedia Lab coordinator.</span></div></li>
+      <li><span class="timeline__date">2018 – now</span><div><strong>Trainer</strong> <span class="muted">The LaunchPad Tanzania</span></div></li>
+    </ul>
+  </div>
+  <div>
+    <h2 class="section-title"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Education</h2>
+    <ul class="timeline">
+      <li><span class="timeline__date">2023 – now</span><div><strong>PhD, Electrical and Computer Engineering</strong> <span class="muted">Instituto Superior Técnico, University of Lisbon</span></div></li>
+      <li><span class="timeline__date">2020 – 2022</span><div><strong>MSc, Wireless and Mobile Computing</strong> <span class="muted">Nelson Mandela African Institution of Science and Technology</span></div></li>
+      <li><span class="timeline__date">2014 – 2017</span><div><strong>BSc, Information Technology and Systems</strong> <span class="muted">Mzumbe University</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="home-section">
+  <h2 class="section-title"><i class="fas fa-hands-holding-circle" aria-hidden="true"></i> Service &amp; community</h2>
+  <ul class="clean-list">
+    <li>Founding chairperson, IEEE Tanzania Young Professionals Affinity Group</li>
+    <li>Industry relations officer, IEEE Tanzania Subsection</li>
+    <li>Peer reviewer for IEEE Access, Elsevier journals and IEEE AFRICON</li>
+    <li>Mentor to young entrepreneurs and student innovators. Outside work, I'm a photographer.</li>
+  </ul>
+</section>
+
+<section class="home-section">
+  <div class="section-head">
+    <h2 class="section-title"><i class="fas fa-newspaper" aria-hidden="true"></i> Latest news</h2>
+    <a class="text-link" href="{{ '/blog-news/' | relative_url }}">All news <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+  </div>
+  <ul class="news-list news-list--compact">
+    {% for post in site.posts limit: 3 %}
+    <li class="news-item">
+      <time class="news-item__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
+      <div><h3 class="news-item__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3></div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="contact-band">
+  <div>
+    <h2>Let's collaborate</h2>
+    <p>I'm happy to talk about research collaborations, data platforms for energy, or training in digital skills.</p>
+  </div>
+  <div class="contact-band__links">
+    <a class="btn btn--primary" href="mailto:{{ site.author.email }}"><i class="fas fa-envelope" aria-hidden="true"></i> {{ site.author.email }}</a>
+    <a class="btn btn--secondary" href="https://www.linkedin.com/in/{{ site.author.linkedin }}"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+    <a class="btn btn--secondary" href="{{ site.author.orcid }}"><i class="ai ai-orcid" aria-hidden="true"></i> ORCID</a>
+  </div>
+</section>
+
+{% include cite-script.html %}

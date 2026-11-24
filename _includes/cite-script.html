@@ -1,0 +1,20 @@
+<script>
+(function () {
+  document.querySelectorAll('.js-cite').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var text = btn.getAttribute('data-cite');
+      var label = btn.querySelector('span');
+      var done = function () {
+        label.textContent = 'Copied';
+        btn.classList.add('is-done');
+        setTimeout(function () { label.textContent = 'Copy citation'; btn.classList.remove('is-done'); }, 1800);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done, function () { window.prompt('Copy citation:', text); });
+      } else {
+        window.prompt('Copy citation:', text);
+      }
+    });
+  });
+})();
+</script>

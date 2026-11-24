@@ -1,0 +1,131 @@
+# Projects rendered by _pages/portfolio.html (/projects/).
+# status: current | past   (current projects are shown first, as featured cards)
+
+- name: "AI-EFFECT"
+  full_name: "Artificial Intelligence Experimentation Facility for the Energy Sector"
+  status: current
+  period: "Jul 2026 – Jan 2027"
+  role: "Researcher"
+  host: "Technical University of Denmark (DTU Wind and Energy Systems)"
+  funder: "European Union (Grant Agreement 101172952)"
+  link: "https://cordis.europa.eu/project/id/101172952"
+  icon: "fa-microchip"
+  summary: >-
+    AI-EFFECT is building a European testing and experimentation facility for AI in the
+    energy sector: a virtual network that links laboratories and computing resources across
+    Denmark, Germany, the Netherlands and Portugal, so that AI solutions can be developed,
+    tested and validated in realistic conditions, including compliance with the EU AI Act.
+    DTU leads the Danish node, which tests AI in virtual and physical multi-energy systems.
+  contributions:
+    - "Implementing AI solution workflows and data pipelines"
+    - "Deploying open-source platforms for use in SYSLAB, DTU's distributed energy laboratory"
+  tags: ["AI", "Energy systems", "Data pipelines", "Testing & experimentation"]
+
+- name: "AI4STEM"
+  full_name: "AI-driven Inclusive STEM Learning for Tanzania"
+  status: current
+  period: "2024 – 2029"
+  role: "Researcher and developer"
+  host: "Mzumbe University, with Ghent University"
+  funder: "VLIR-UOS (TEAM)"
+  icon: "fa-graduation-cap"
+  summary: >-
+    Uses AI to make STEM learning in Tanzania more inclusive.
+  contributions:
+    - "Developing AI-based solutions for learning support"
+    - "Preparing training materials"
+  tags: ["AI", "Education", "Inclusion"]
+
+- name: "3PhaseInsight"
+  full_name: "Leveraging Insights from 3-Phase Meter Data"
+  status: past
+  period: "Jan 2026 – Jun 2026"
+  role: "Researcher"
+  host: "Technical University of Denmark (DTU Wind and Energy Systems)"
+  link: "https://wind.dtu.dk/3PhaseInsight"
+  icon: "fa-bolt"
+  summary: >-
+    Turns per-phase smart-meter data into insights for low-voltage distribution grids.
+  contributions:
+    - "Developed data applications and pipelines for smart-meter data"
+    - "Engineered data-platform orchestration with Apache Airflow"
+    - "Contributed to the open-source data platform and 3phi framework spin-off"
+  tags: ["Smart meters", "Data platforms", "Apache Airflow"]
+
+- name: "InnoCyPES"
+  full_name: "Innovative Tools for Cyber-Physical Energy Systems"
+  status: past
+  period: "2023 – 2026"
+  role: "Marie Skłodowska-Curie Early-Stage Researcher and PhD candidate"
+  host: "University of Salento (HPC Lab); coordinated by DTU"
+  funder: "Marie Skłodowska-Curie Actions Doctoral Network (Grant 956433)"
+  link: "https://innocypes.eu/"
+  icon: "fa-network-wired"
+  summary: >-
+    Large-scale data management and integration in energy systems: the PhD research behind
+    my work on peer-to-peer data storage and graph-based data models.
+  contributions:
+    - "Designed and implemented a data storage and integration tool for multiple data sources"
+    - "Research stays at Green Power Denmark, TU Delft and INESC-ID (IST)"
+    - "Lectured on large-scale data management at the InnoCyPES Summer School"
+  tags: ["P2P systems", "Graph databases", "CIM", "Data integration"]
+
+- name: "IoT-4-Youths"
+  full_name: "Inclusively Empowering the Next Generation of IoT Champions"
+  status: past
+  period: "2023 – 2025"
+  role: "Project member"
+  host: "Mzumbe University, with Ghent University"
+  funder: "VLIR-UOS (Short Initiative)"
+  icon: "fa-wifi"
+  summary: >-
+    A capacity-building programme in IoT for young people in Tanzania.
+  contributions:
+    - "Research, IoT training and mentorship for young people"
+  tags: ["IoT", "Capacity building"]
+
+- name: "Data2Info"
+  full_name: "Improving the data analysis capacity of experts and information systems in Tanzanian ministries"
+  status: past
+  period: "2023 – 2025"
+  role: "Project member and researcher"
+  host: "Mzumbe University, with Ghent University"
+  link: "https://hes4sd.be/project/improving-the-data-analysis-capacity-of-experts-and-information-systems-in-tanzanian-ministries-for-better-resources-management-and-sustainable-economic-growth-data2info/"
+  icon: "fa-chart-line"
+  summary: >-
+    Builds data analysis capacity in public-sector information systems in Tanzania.
+  contributions:
+    - "Capacity building and research on data analysis"
+  tags: ["Data analysis", "Public sector"]
+
+- name: "4SITe"
+  full_name: "VLIR-UOS Institutional University Cooperation with Mzumbe University"
+  status: past
+  period: "2021 – 2023"
+  role: "Project member and Multimedia Lab coordinator"
+  host: "Mzumbe University"
+  link: "https://www.vliruos.be/iuc-mzumbe-university-tanzania"
+  icon: "fa-photo-film"
+  summary: >-
+    Institutional cooperation programme; I coordinated its Multimedia Lab.
+  contributions:
+    - "Built partnerships for the Multimedia Lab"
+    - "Produced multimedia materials"
+    - "Prepared the lab to become a permanent university unit"
+  tags: ["Multimedia", "Digital infrastructure"]
+
+- name: "ACTEA"
+  full_name: "Applied Curricula in Technology for East Africa"
+  status: past
+  period: "2019 – 2020"
+  role: "Administrative assistant"
+  host: "Mzumbe University"
+  link: "https://www.actea.net/"
+  icon: "fa-book-open"
+  summary: >-
+    Curriculum development in applied technology, linking East African universities with industry.
+  contributions:
+    - "Managed the project's data and reporting"
+    - "Built industry partnerships"
+    - "Researched curriculum needs"
+  tags: ["Curriculum", "Partnerships"]
