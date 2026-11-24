@@ -5,32 +5,37 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<p>My writing is organised by type and year. For article-level details and updated indexing, you can also visit <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>. For questions about any specific publication, feel free to get in touch.</p>
 
-{% include base_path %}
+{% comment %}
+  Entries live in _data/publications.yml. Links are built automatically
+  from each entry's doi / arxiv / url / pdf fields.
+{% endcomment %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
+<p>
+{% for section in site.data.publications.sections %}
+  <a href="#{{ section.id }}">{{ section.title }}</a>{% unless forloop.last %} &middot; {% endunless %}
+{% endfor %}
+</p>
+
+{% for section in site.data.publications.sections %}
+<h2 id="{{ section.id }}">{{ section.title }}</h2>
+
+{% if section.entries.size == 0 %}
+<p><em>{{ section.empty_text | default: "Coming soon." }}</em></p>
 {% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
+{% assign by_year = section.entries | group_by: "year" | sort: "name" | reverse %}
+{% for group in by_year %}
+<h3>{{ group.name }}</h3>
+<ul>
+  {% for pub in group.items %}
+  <li>
+    {% if pub.authors %}{{ pub.authors }} {% endif %}<em>{{ pub.title }}</em>.{% if pub.venue %} {{ pub.venue }}.{% endif %}
+    {% capture links %}{% if pub.doi %} | <a href="https://doi.org/{{ pub.doi }}">DOI</a>{% endif %}{% if pub.arxiv %} | <a href="https://arxiv.org/abs/{{ pub.arxiv }}">arXiv</a>{% endif %}{% if pub.url %} | <a href="{{ pub.url }}">Article</a>{% endif %}{% if pub.pdf %} | <a href="{% if pub.pdf contains '://' %}{{ pub.pdf }}{% else %}{{ pub.pdf | relative_url }}{% endif %}">PDF</a>{% endif %}{% endcapture %}
+    {% if links != "" %}[{{ links | remove_first: " | " }}]{% endif %}
+  </li>
   {% endfor %}
+</ul>
+{% endfor %}
 {% endif %}
-
-
-
+{% endfor %}

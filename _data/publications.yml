@@ -1,0 +1,149 @@
+# Publication list rendered by _pages/publications.html.
+#
+# Links are generated automatically from these optional fields:
+#   doi:   10.xxxx/...        -> https://doi.org/<doi>          ("DOI")
+#   arxiv: 2507.14682         -> https://arxiv.org/abs/<arxiv>   ("arXiv")
+#   url:   https://...        -> direct link                     ("Article")
+#   pdf:   /files/x.pdf       -> local or remote PDF             ("PDF")
+# Entries are grouped by year (newest first) within each section.
+# Section `id`s are used as page anchors (/publications/#essays).
+
+sections:
+  - id: peer-reviewed
+    title: "Selected Peer-Reviewed Publications"
+    entries:
+      - year: 2026
+        authors: "Secchi, M., Troelsen, A. H., Ammentorp, W. A., Tanase, D. V., Mwinuka, L. J., Fotteler, C., and others."
+        title: "Generating insights for low-voltage distribution grids from per-phase smart meter data"
+        venue: "CIRED 2026 Brussels Workshop"
+      - year: 2026
+        authors: "Mwinuka, L. J., Cafaro, M., Pereira, L., and Morais, H."
+        title: "Big data energy systems: A survey of practices and associated challenges"
+        venue: "Computer Science Review, 60, 100927"
+        url: "https://www.sciencedirect.com/science/article/pii/S1574013726000365"
+      - year: 2026
+        authors: "Mwinuka, L. J., Cafaro, M., Pereira, L., and Morais, H."
+        title: "The Design and Implementation of a Graph-Based P2P Data Storage Service"
+        venue: "Future Internet, 18(1), 9"
+        doi: "10.3390/fi18010009"
+        url: "https://www.mdpi.com/1999-5903/18/1/9"
+      - year: 2025
+        authors: "Mwinuka, L., Sundsgaard, K., Cafaro, M., Yang, G., Pereira, L., and Morais, H."
+        title: "A CIM-based graph data model for reliability studies of medium-voltage cables"
+        venue: "2025 IEEE PES Innovative Smart Grid Technologies Europe (ISGT Europe)"
+        url: "https://ieeexplore.ieee.org/document/11305336"
+      - year: 2025
+        authors: "Cafaro, M., Epicoco, I., Pulimeno, M., Mwinuka, L. J., Pereira, L., and Morais, H."
+        title: "IDSS, a Novel P2P Relational Data Storage Service"
+        venue: "arXiv preprint"
+        arxiv: "2507.14682"
+      - year: 2024
+        authors: "Sundsgaard, K., Mwinuka, L. J., Cafaro, M., Hansen, J. Z., and Yang, G."
+        title: "A Decentralised Relational Data Model for Reliability Studies of Medium-Voltage Cables"
+        venue: "2024 IEEE PES Innovative Smart Grid Technologies Europe (ISGT Europe)"
+        url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=d5_GfVUAAAAJ&citation_for_view=d5_GfVUAAAAJ:UeHWp8X0CEIC"
+      - year: 2022
+        authors: "Mwinuka, L. J., Agghey, A. Z., Kaijage, S. F., and Ndibwile, J. D."
+        title: "FakeAP detector: an android-based client-side application for detecting Wi-Fi hotspot spoofing"
+        venue: "IEEE Access, 10, 13611-13623"
+        url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=d5_GfVUAAAAJ&citation_for_view=d5_GfVUAAAAJ:u5HHmVD_uO8C"
+      - year: 2021
+        authors: "Agghey, A. Z., Mwinuka, L. J., Pandhare, S. M., Dida, M. A., and Ndibwile, J. D."
+        title: "Detection of username enumeration attack on SSH protocol: Machine learning approach"
+        venue: "Symmetry, 13(11), 2192"
+        url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=d5_GfVUAAAAJ&citation_for_view=d5_GfVUAAAAJ:9yKSN-GCB0IC"
+      - year: 2017
+        authors: "Mwinuka, L. J."
+        title: "Measuring Students' Motivation, Acceptance and Engagement in Campus Community Mobile Applications: An Experience of Mfunzi App"
+        url: "https://www.researchgate.net/publication/317104091_Measuring_Students%27_motivation_acceptance_and_Engagement_in_Campus_Community_Mobile_Applications_An_experience_of_Mfunzi_App"
+
+  - id: theses
+    title: "Theses"
+    entries:
+      - year: 2022
+        authors: "Mwinuka, L. J."
+        title: "User-side Wi-Fi hotspot spoofing detection on Android-based devices"
+        venue: "Master's Dissertation, Nelson Mandela African Institution of Science and Technology (NM-AIST)"
+        url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=d5_GfVUAAAAJ&citation_for_view=d5_GfVUAAAAJ:u-x6o8ySG0sC"
+
+  - id: technical-reports
+    title: "Technical Reports"
+    entries:
+      - year: 2026
+        authors: "Heussen, K., Tajalli, S. Z., Mwinuka, L., Malkova, A., and Troelsen, A. H."
+        title: "Use cases for Data Apps and Data Pipelines"
+        venue: "Zenodo"
+        doi: "10.5281/zenodo.20793151"
+      - year: 2026
+        authors: "Heussen, K., Mwinuka, L., Malkova, A., Tajalli, S. Z., and Troelsen, A. H."
+        title: "Results on Data Apps"
+        venue: "Zenodo"
+        doi: "10.5281/zenodo.21072189"
+      - year: 2026
+        authors: "Heussen, K., Tajalli, S. Z., Malkova, A., and Mwinuka, L."
+        title: "Description of Implemented Data App Algorithms"
+        venue: "Zenodo"
+        doi: "10.5281/zenodo.21072394"
+      - year: 2026
+        authors: "Mwinuka, L., Heussen, K., Tajalli, S. Z., and Malkova, A."
+        title: "Results of data pipeline applications showcase"
+        venue: "Zenodo"
+        doi: "10.5281/zenodo.21072541"
+      - year: 2026
+        authors: "Mwinuka, L., Heussen, K., Malkova, A., and Tajalli, S. Z."
+        title: "Data Specifications"
+        venue: "Zenodo"
+        doi: "10.5281/zenodo.21071610"
+      - year: 2026
+        authors: "Heussen, K., Mwinuka, L., Malkova, A., and Tajalli, S. Z."
+        title: "Data Infrastructure"
+        venue: "Zenodo"
+        doi: "10.5281/zenodo.21071943"
+      - year: 2026
+        authors: "Monaco, R., Kabbara, N., Sundsgaard, K., Bolat, K., Kesici, M., Baron-Prada, E., and Mwinuka, L. J."
+        title: "Cyber-Physical Energy Distribution Systems: Innovative use cases and future perspectives"
+        venue: "Zenodo"
+        doi: "10.5281/zenodo.18431947"
+      - year: 2017
+        authors: "Mwinuka, L. J."
+        title: "Law Firm Information Management System"
+        venue: "Medium"
+        url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=d5_GfVUAAAAJ&citation_for_view=d5_GfVUAAAAJ:d1gkVwhDpl0C"
+
+  - id: white-papers
+    title: "White Papers"
+    empty_text: "To be posted."
+    entries: []
+
+  - id: essays
+    title: "Essays"
+    entries:
+      - year: 2023
+        authors: "Mwinuka, L. J."
+        title: "Do you know what comes next after Gigabyte (GB) and Terabyte (TB)?"
+        venue: "Medium, October 2023"
+        url: "https://medium.com/@lunomwinuka/do-you-know-what-comes-next-after-gigabyte-gb-and-terabyte-tb-0a617dd7379e"
+      - year: 2021
+        authors: "Mwinuka, L. J."
+        title: "(O)BSS Colouring: What is it?"
+        venue: "Medium, July 2021"
+        url: "https://medium.com/@lunomwinuka/o-bss-colouring-what-is-it-93903b317461"
+
+  - id: opinion
+    title: "Opinion"
+    entries:
+      - year: 2023
+        authors: "Mwinuka, L. J."
+        title: "Maana ya jina Lunodzo (Andiko la kimtazamo)"
+        venue: "Medium, December 2023"
+        url: "https://medium.com/@lunomwinuka/maana-ya-lunodzo-andiko-la-kimtazamo-db7e307f2ec3"
+      - year: 2023
+        authors: "Mwinuka, L. J."
+        title: "Njombe si chafu kwa kiwango hiki!"
+        venue: "Medium, October 2023"
+        url: "https://medium.com/@lunomwinuka/njombe-si-chafu-kwa-kiwango-hiki-fc4a655120dd"
+      - year: 2019
+        authors: "Mwinuka, L. J."
+        title: "What are we doing wrong: Learning Computing studies"
+        venue: "Medium"
+        url: "https://medium.com/@lunomwinuka/what-are-we-doing-wrong-learning-computing-studies-4287b42a8317"
